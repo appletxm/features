@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>my feature test</title>
+	<style>
+		*{padding:0; marign:0;}
+		table{
+			width:60%;
+		}
+	</style>
+</head>
+<body>
+<!--<object classid="clsid:CA8A9780-280D-11CF-A24D-444553540000"  height="517" border="0">
+	<param name="allowFullScreenInteractive" value="true">
+	<param name="_Version" value="65539">
+	<param name="_ExtentX" value="20108">
+	<param name="_ExtentY" value="10866">
+	<param name="_StockProps" value="0">
+	<param name="SRC" value="data:application/pdf;base64,PHRhYmxlPjxjYXB0aW9uPnRoaXMgaXMgbXkgcGRmIG91dHB1dCB0ZXN0IGp1c3QgZm9yIHdlYmtpdCA8L2NhcHRpb24+PHRoZWFkPjx0aD5uYW1lPC90aD48dGg+YWdlPC90aD48dGg+bG9jYXRpb248L3RoPjwvdGhlYWQ+PHRib2R5Pjx0cj48dGQ+dHhtPC90ZD48dGQ+NjA8L3RkPjx0ZD5HWjwvdGQ+PC90cj48dHI+PHRkPkZGVDwvdGQ+PHRkPjcwPC90ZD48dGQ+R1o8L3RkPjwvdHI+PHRyPjx0ZD5iYjwvdGQ+PHRkPjY5PC90ZD48dGQ+U1o8L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPg==">
+	<object data="data:application/pdf;base64,PHRhYmxlPjxjYXB0aW9uPnRoaXMgaXMgbXkgcGRmIG91dHB1dCB0ZXN0IGp1c3QgZm9yIHdlYmtpdCA8L2NhcHRpb24+PHRoZWFkPjx0aD5uYW1lPC90aD48dGg+YWdlPC90aD48dGg+bG9jYXRpb248L3RoPjwvdGhlYWQ+PHRib2R5Pjx0cj48dGQ+dHhtPC90ZD48dGQ+NjA8L3RkPjx0ZD5HWjwvdGQ+PC90cj48dHI+PHRkPkZGVDwvdGQ+PHRkPjcwPC90ZD48dGQ+R1o8L3RkPjwvdHI+PHRyPjx0ZD5iYjwvdGQ+PHRkPjY5PC90ZD48dGQ+U1o8L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPg==" type="application/pdf"  height="517">
+	</object>
+</object>
+
+<embed width="100%" height="100%" name="plugin" id="plugin" src="data:application/pdf;base64,PHRhYmxlPjxjYXB0aW9uPnRoaXMgaXMgbXkgcGRmIG91dHB1dCB0ZXN0IGp1c3QgZm9yIHdlYmtpdCA8L2NhcHRpb24+PHRoZWFkPjx0aD5uYW1lPC90aD48dGg+YWdlPC90aD48dGg+bG9jYXRpb248L3RoPjwvdGhlYWQ+PHRib2R5Pjx0cj48dGQ+dHhtPC90ZD48dGQ+NjA8L3RkPjx0ZD5HWjwvdGQ+PC90cj48dHI+PHRkPkZGVDwvdGQ+PHRkPjcwPC90ZD48dGQ+R1o8L3RkPjwvdHI+PHRyPjx0ZD5iYjwvdGQ+PHRkPjY5PC90ZD48dGQ+U1o8L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPg==" type="application/pdf" internalinstanceid="33">-->
+
+<input type=button value=剪切 onclick=document.execCommand('Cut')>
+<input type=button value=拷贝 onclick=document.execCommand('Copy')>
+<input type=button value=粘贴 onclick=document.execCommand('Paste')>
+<input type=button value=撤消 onclick=document.execCommand('Undo')>
+<input type=button value=重做 onclick=document.execCommand('Redo') id=button2 name=button2>
+<input>
+<input type=button value=删除 onclick=document.execCommand('Delete')>
+<input type=button value=黑体 onclick=document.execCommand('Bold')>
+<input type=button value=斜体 onclick=document.execCommand('Italic')>
+<input type=button value=下划线 onclick=document.execCommand('Underline')>
+<input type=button value=停止 onclick=document.execCommand('stop')>
+<input type=button value=保存 onclick=document.execCommand('SaveAs')>
+<input type=button value=另存为 onclick=document.execCommand('saveAs',false,'c:\\test.htm')>
+<input type=button value=字体 onclick=document.execCommand('FontName',false,fn)>
+<input type=button value=字体大小 onclick=document.execCommand('FontSize',false,fs)>
+<input type=button value=刷新 onclick=document.execCommand('refresh',false,0)>
+
+<input type="button" value="out put excel" id="outPutExcel" onclick="myApp.excel.outPut();"/>
+	<input type="button" value="out put pdf" id="outPutPdf" onclick="myApp.pdf.outPut();"/>
+	<script src="dist/main.js"></script>
+</body>
+</html>
